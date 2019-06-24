@@ -5,20 +5,20 @@
             Facebook--log in or sign up
         </title>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="/home/cgi/Documents/Stackroute/Assignment1/html5-boilerplate_v7.2.0/css/style.css"> 
+        <link rel="stylesheet" href="css/style.css"> 
     </head>
 
     <body>
         <header>
             <div id="header1">
-            <h1>facebook</a></h1>
+            <h1 id="face"> <a href="" >facebook </a></h1>
                <div id="header2">
-                <label for="form1">Email or phone</label>
-                <input id="form1" type="Email" name="Email">
-                <label for="form2">Password</label>
-                <input id="form2" type="Password" name="Email">
-                <input type="submit" value="Login"><br>
-                <a id="forgot_pass"href="">Forgotten account?</a>
+                 <label for="form1">Email or phone</label>
+                 <input id="form1" type="Email" name="Email" required> 
+                 <label for="form2">Password</label>
+                 <input id="form2" type="Password" name="Email" required> 
+                 <input type="submit" value="Login"><br>
+                 <a id="forgot_pass"href="">Forgotten account?</a>
                </div>
             </div>
         </header>
@@ -28,7 +28,7 @@
             <p>Facebook helps you connect and share with the people in your life.</p>
             </div>
             <div id="image">
-            <img id="image" src="/home/cgi/Downloads/Stackroute/Assignment1/fbworld.png" alt="Facebook">
+            <img id="image" src="img/fbworld.png" alt="Facebook"/>
             </div>
             <div class="preview">
             <div id="acc">
@@ -37,29 +37,75 @@
             <div id="acc1">
                 <p>It's free and always will be.</p>
             </div>
-            <div class="details">
-                <input placeholder="First Name" type="text" id="namebox" name="name1" />
-				<input placeholder="Last Name" type="text" id="namebox"  /> <br>
-				<input placeholder="Email" type="text" id="mailbox" /><br>
-				<input placeholder="Re-enter email" type="text" id="mailbox"  /><br>
-				<input placeholder="Password" type="password" id="mailbox"  /><br>
-                <input type="date" id="namebox"  /><br>
+            <form>
+                <input placeholder="First Name" type="text" id="namebox" name="name1" required/> &nbsp;
+                <input placeholder="Last Name" type="text" id="namebox" required /> <br> <br>
+				<input placeholder="Mobile number or email address" type="text" id="mailbox" required/><br> <br>
+				<input placeholder="Re-enter email" type="text" id="mailbox" required /><br> <br>
+				<input placeholder="Password" type="password" id="mailbox" required /> <br>
+                <h3>Birthday</h3>
+                <select name="Day" id="day" required>
+                    <option value="0">Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <select name="Month" id="month" required>
+                    <option value="Month">Month</option>
+                    <option value="Jan">Jan</option>
+                    <option value="Feb">Feb</option>
+                    <option value="Mar">Mar</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="Aug">Aug</option>
+                    <option value="Sept">Sept</option>
+                    <option value="Oct">Oct</option>
+                    <option value="Nov">Nov</option>
+                    <option value="Dec">Dec</option>
+                </select>
+                <select name="Year" id="year" required>
+                    <option value="Year">year</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                </select>
                 <h3>Gender</h3>
-				<input type="radio" id="r-b" name="sex" value="male" />Male
-                <input type="radio" id="r-b" name="sex" value="female" />Female
-                <input type="radio" id="r-b" name="sex" value="custom" />Custom<br>
-				<p id="create">By clicking Create an account, you agree to our Terms and that 
-				you have read our Data Policy, including our Cookie Use.</p>
-				<input type="submit" class="button2" value="Create an account" />
+                <div id="gender">
+				    <input type="radio" id="r-b" name="sex" value="male" />Male
+                    <input type="radio" id="r-b" name="sex" value="female" />Female
+                    <input type="radio" id="r-b" name="sex" value="custom" />Custom<br>
+                </div>
+                <p id="create">By clicking Sign Up, you agree to our <a href="">Terms, Data Policy and Cookie Policy</a>. You may receive SMS notifications from us and can opt out at any time.</p>
+				<input type="submit" class="button" value="Sign up" />
                 <br>
-                <p id="intro5">Create a Page for a celebrity, band or business.</p>
-            </div>
-            </div>
+                <p id="celebritypage"><a href="">Create a Page</a> for a celebrity, band or business.</p>
+            </form>
+            
         </main>
     
         <footer>
 
+        <div id="footer1">
+        <ul>
+            <li><a href="">Sign up</a></li>
+            <li><a href="">Login</a></li>
+            <li><a href="">Messenger</a></li>
+            <li><a href="">Watch</a></li>
+            <li><a href="">People</a></li>
+            <li><a href="">Profile</a></li>
+            <li><a href="">Events</a></li>
+            <li><a href="">Page</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Careers</a></li>
+        </ul>
+    </div>
         </footer>
-
     </body>
-</html>``
+</html>
