@@ -1,0 +1,79 @@
+#header1{
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: darkblue;
+}
+#header2{
+    float: right;
+    margin-top: 30px;
+    margin-right: 180px;
+}
+h1{
+    color: white;
+    padding-left: 150px;
+    padding-top: 1px;
+    font-size: 43px;
+    float: left;
+}
+body{
+    margin: 0;
+    margin-top: 0;
+}
+main{
+    margin-top: 150px;
+    margin-left: 0px;
+}
+#forgot_pass{
+    color: white;
+    float: right;
+    padding-right: 110px;
+}
+#fbdesc{
+    color: #0e385f;
+    font-size: 22px;
+    font-weight: bold;
+   
+    margin-top: 40px;
+    width: 450px;
+    word-spacing: -1px;
+    padding-left: 150px;
+}
+#image{
+    float: left;
+    padding-left: 60px;
+    margin-right: 10px;
+}#create_acc{
+    float: right;
+    position: absolute;
+    bottom: 350px;
+    right: 240px;
+    font-size: 30px;
+    font-family: inherit;
+}
+#acc{
+    position: absolute;
+    top: 90px;
+    right: 230px;
+    font-size: 30px;
+}
+#acc1{
+    position: absolute;
+    top: 160px;
+    right: 320px;
+    font-size: 23px;
+}
+#namebox{
+    margin left: 400px;
+    
+}    
+.preview{
+    float: right;
+    width: 500px;
+    padding-right: 70px;
+}
+.details{
+    line-height: 30px;
+}
